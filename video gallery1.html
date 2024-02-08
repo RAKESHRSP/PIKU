@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Roy[]TechPIKU</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="logo-toggle-flex">
+      <div class="logo">
+        <img id="header-img" src="#LOGO" alt="Roy_TechPIKU" title="Roy_Tech">
+        <h1><span class="logo-text-">PIKU</span></h1>
+      </div>
+      <a href="#nav-bar" id="menu-toggle" class="menu-toggle"><span class="fas fa-bars fa-lg"></span>
+      </a>
+    </div>
+    <nav class="nav-bar-wrapper" id="nav-bar">
+      <a href="#main-menu-toggle" id="main-menu-close" class="menu-close"><span class="fas fa-times fa-lg"></span>
+      </a>
+      <ul class="menu-wrapper" id="menu-wrapper">
+        <li><a href="index.html" class="nav-link">HOME</a></li>
+      </ul>
+    </nav>
+    <a href="#main-menu-toggle" class="backdrop"></a>
+    </body>
+  </header>
+  </head>
+<br><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Video Gallery</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="videos">
+            <video class="active" src="PIKU.mp4" muted></video>
+            <video src="PIKU1.mp4" muted></video>
+            <video src="PIKU2.mp4" muted></video>
+            <video src="PIKU3.mp4" muted></video>
+            <video src="PIKU4.mp4" muted></video>
+            <video src="PIKU5.mp4" muted></video>
+        </div>
+        <div class="main-video">
+            <video src="PIKU.mp4" muted controls autoplay></video>
+        </div>
+    </div>
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('.videos video').click(function(){
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var src = $(this).attr('src');
+                $('.main-video video').attr('src',src);
+            });
+        });
+
+    </script>
+
+</body>
+</html>
