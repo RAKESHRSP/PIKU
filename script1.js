@@ -1,9 +1,3 @@
-/*
-🎬 Video playlist UI Design like Skillshare With Vanilla JavaScript
-👨🏻‍⚕️ By: Coding Design
-
-You can do whatever you want with the code. However if you love my content, you can subscribed my YouTube Channel
-🌎link: www.youtube.com/codingdesign
 */
 
 const main_video = document.querySelector('.main-video video');
@@ -13,67 +7,41 @@ const video_playlist = document.querySelector('.video-playlist .videos');
 let data = [
     {
         'id': 'a1',
-        'title': 'manipulate text background',
-        'name': 'manipulate text background.mp4',
-        'duration': '2:47',
+        'title': 'PIKU',
+        'name': 'PIKU.mp4',
     },
     {
         'id': 'a2',
-        'title': 'build gauge with css',
-        'name': 'build gauge with css.mp4',
-        'duration': '2:45',
+        'title': 'PIKU',
+        'name': 'PIKU1.mp4',
     },
     {
         'id': 'a3',
-        'title': '3D popup card',
-        'name': '3D popup card.mp4',
-        'duration': '24:49',
+        'title': 'PIKU',
+        'name': 'PIKU2.mp4',
     },
 
     {
         'id': 'a4',
-        'title': 'customize HTML5 form elements',
-        'name': 'customize HTML5 form elements.mp4',
-        'duration': '3:59',
+        'title': 'PIKU',
+        'name': 'PIKU3.mp4',
     },
     {
         'id': 'a5',
-        'title': 'custom select box',
-        'name': 'custom select box.mp4',
-        'duration': '4:25',
+        'title': 'PIKU',
+        'name': 'PIKU4.mp4',
     },
     {
         'id': 'a6',
-        'title': 'embed google map to contact form',
-        'name': 'embed google map to contact form.mp4',
-        'duration': '5:33',
+        'title': 'PIKU',
+        'name': 'PIKU5.mp4',
     },
-    {
-        'id': 'a7',
-        'title': 'password strength checker javascript web app',
-        'name': 'password strength checker javascript web app.mp4',
-        'duration': '0:29',
-    },
-
-    {
-        'id': 'a8',
-        'title': 'custom range slider',
-        'name': 'custom range slider.mp4',
-        'duration': '1:12',
-    },
-    {
-        'id': 'a9',
-        'title': 'animated shopping cart',
-        'name': 'animated shopping cart.mp4',
-        'duration': '3:38',
-    },
-
 ];
 
 data.forEach((video, i) => {
     let video_element = `
                 <div class="video" data-id="${video.id}">
-                    <img src="images/play.svg" alt="">
+                    <img src="https://postimg.cc/Z0T9CCcJ" alt="">
                     <p>${i + 1 > 9 ? i + 1 : '0' + (i + 1)}. </p>
                     <h3 class="title">${video.title}</h3>
                     <p class="time">${video.duration}</p>
